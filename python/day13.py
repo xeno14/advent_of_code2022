@@ -134,7 +134,7 @@ def part2(s: str) -> int:
     packets = [parse(line) for line in s.split('\n') if line]
     packets.append(parse('[[2]]'))
     packets.append(parse('[[6]]'))
-    
+
     packets.sort()
     
     lines = [str(x) for x in packets] 
